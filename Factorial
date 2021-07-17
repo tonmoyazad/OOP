@@ -1,0 +1,13 @@
+''' Factorial is basically mutiplication of the targeted number from 1 to the target linear way
+    eg. Factorial of 5 = 1x2x3x4x5
+'''
+
+def factorial(target):
+    if target == 1:
+      return 1
+    else:
+      return target * factorial(target -1)
+
+
+target = 5
+print(factorial(target))
