@@ -1,0 +1,31 @@
+# without LC loop looks like this
+
+
+''' loop will return square of each value '''
+
+l = [100,200,300]
+l2 = []
+for value in l:
+  l2.append(value * value)
+  
+# with list comprehension
+
+l = [100,200,300]
+l2 = [ valeu*value for value in l]
+
+
+# get the even values from the with LC
+
+l = [ 10,20,25,30,33,50,56,45,23]
+l2 = [ value for value in l if value%2 == 0]
+
+
+# create a dict with key & sqaure value
+
+d = {x:x**2 for x in range(1,5)}
+print(d)
+
+
+# switching dict key -> value & value -> key 
+
+d2 = { value:key for kay,value in d.items()}
